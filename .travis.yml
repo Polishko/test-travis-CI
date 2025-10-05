@@ -1,0 +1,7 @@
+sudo: required # make sure it is used
+services:
+  - docker
+
+script:
+  - docker build -t dockerlesson/node . # build image
+  - docker images dockerlesson/node # use image
